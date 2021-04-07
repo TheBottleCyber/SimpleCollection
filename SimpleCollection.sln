@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCollection", "SimpleC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Usage", "Usage\Usage.csproj", "{7578508C-E8AF-4ADF-A55B-197981A02007}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitSimpleCollection", "NUnitSimpleCollection\NUnitSimpleCollection.csproj", "{F9B86F52-F79F-4C17-8123-196006AD2B23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7578508C-E8AF-4ADF-A55B-197981A02007}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7578508C-E8AF-4ADF-A55B-197981A02007}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7578508C-E8AF-4ADF-A55B-197981A02007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9B86F52-F79F-4C17-8123-196006AD2B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B86F52-F79F-4C17-8123-196006AD2B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B86F52-F79F-4C17-8123-196006AD2B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B86F52-F79F-4C17-8123-196006AD2B23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
