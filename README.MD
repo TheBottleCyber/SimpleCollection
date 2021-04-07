@@ -1,0 +1,1 @@
+A test task that I did in October 2020. There are two branches, a simple and complex implementation of the same technical task
