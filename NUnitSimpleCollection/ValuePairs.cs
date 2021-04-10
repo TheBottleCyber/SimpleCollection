@@ -6,7 +6,6 @@ using SimpleCollection;
 namespace Pairs
 {
     public record PersonCoder(string name, int age, DateTime lastTimeCoded);
-    public record PersonChiller(string name, int age);
 
     public class IdNameValue
     {
@@ -45,44 +44,6 @@ namespace Pairs
             Assert.IsTrue(idNameValuePair.Id != null &&
                           idNameValuePair.Name != null &&
                           idNameValuePair.Value != null);
-        }
-    }
-
-
-    public class IdName
-    {
-        [TestCase(1, "s2")]
-        [TestCase(1, 1.0)]
-        [TestCase(typeof(PersonChiller), 1.0e04)]
-        public void Constructor<TKeyId, TKeyName>(TKeyId id, TKeyName name)
-        {
-            Assert.DoesNotThrow(() => new IdNamePair<TKeyId, TKeyName>(id, name));
-        }
-        
-        [Test]
-        [SuppressMessage("ReSharper", "OperatorIsCanBeUsed")]
-        public void Constructor()
-        {
-            var peter = new PersonChiller("Peter", 31);
-            
-            var idNameValuePair = new IdNamePair<PersonChiller, int>(peter, 31);
-
-            Assert.IsTrue(idNameValuePair.Id.GetType() == peter.GetType() &&
-                          idNameValuePair.Name.GetType() == typeof(int));
-        }
-
-        [Test]
-        public void Equals()
-        {
-            var peter = new PersonChiller("Peter", 31);
-            
-            var idNameValuePair = new IdNamePair<PersonChiller, string>(peter, "1.0e04");
-
-            Assert.IsTrue(idNameValuePair.Id == peter &&
-                          idNameValuePair.Name == "1.0e04");
-
-            Assert.IsTrue(idNameValuePair.Id != null &&
-                          idNameValuePair.Name != null);
         }
     }
 }
